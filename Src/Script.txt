@@ -1,0 +1,9 @@
+Dim iURL 
+Dim objShell
+
+iURL = "www.google.ie"
+
+do
+set objShell = CreateObject("Shell.Application")
+objShell.ShellExecute "chrome.exe", iURL, "", "", 1
+loop
